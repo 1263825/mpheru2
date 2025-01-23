@@ -1,0 +1,404 @@
+.team-card {
+    &.style1 {
+        position: relative;
+        overflow: hidden;
+        max-width: 410px;
+        margin: 0 auto;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+        .team-thumb {
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+
+            img {
+                transition: all 0.4s;
+                -webkit-transition: all 0.4s;
+                -moz-transition: all 0.4s;
+                -ms-transition: all 0.4s;
+                -o-transition: all 0.4s;
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+            }
+        }
+
+        .team-content {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            bottom: 30px;
+            left: 80px;
+            right: 0px;
+            padding: 15px 30px;
+            background: $white-color;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -ms-border-radius: 18px;
+            -o-border-radius: 18px;
+
+            @include sm {
+                left: 60px;
+                padding: 15px;
+            }
+
+            .title {
+                h4 {
+                    margin-bottom: 0;
+                    color: $theme-color;
+                    font-family: $body-font;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 26.25px;
+
+                    @include sm {
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+
+                    a {
+                        color: $theme-color;
+                        font-family: $body-font;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 26.25px;
+
+                        @include sm {
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+
+                p {
+                    color: $text-color;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    margin-bottom: 0;
+
+                    @include sm {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+
+                }
+            }
+
+            .social-profile {
+                position: absolute;
+                right: 17px;
+                bottom: 27px;
+                text-align: center;
+                content: "";
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                z-index: 2;
+                display: inline-block;
+                overflow: hidden;
+                z-index: 9;
+
+                @include sm {
+                    bottom: 17px;
+                }
+
+                ul {
+                    padding-left: 0;
+                    margin-bottom: 5px;
+                    transform: translateY(100px);
+                    transition: all 0.6s ease-in-out;
+                    opacity: 0;
+                    visibility: hidden;
+
+                    li {
+                        margin-bottom: 5px;
+
+                        a {
+                            width: 44px;
+                            height: 44px;
+                            line-height: 44px;
+                            text-align: center;
+                            font-size: 18px;
+                            display: block;
+                            background: $body-color;
+                            color: $text-color;
+                            -webkit-transition: all .4s ease-in-out;
+                            transition: all .4s ease-in-out;
+                            text-align: center;
+                            margin: 0 auto;
+                            border-radius: 50%;
+
+                            &:hover {
+                                background-color: $theme-color;
+                                color: $white-color;
+                            }
+                        }
+                    }
+                }
+
+                .plus-btn {
+                    position: relative;
+                    z-index: 2;
+                    cursor: pointer;
+                    width: 44px;
+                    height: 44px;
+                    line-height: 44px;
+                    text-align: center;
+                    font-size: 18px;
+                    display: inline-block;
+                    background: $body-color;
+                    color: $text-color;
+                    @include transition;
+                    border-radius: 50%;
+
+                    &:hover {
+                        background-color: $theme-color3 !important;
+                        color: $title-color;
+                    }
+                }
+
+                &:hover {
+                    .plus-btn {
+                        background-color: $theme-color3;
+                        color: $white-color;
+                    }
+
+                    ul {
+                        transform: translateY(0);
+                        opacity: 1;
+                        visibility: visible;
+                        -webkit-transform: translateY(0);
+                        -moz-transform: translateY(0);
+                        -ms-transform: translateY(0);
+                        -o-transform: translateY(0);
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .team-content {
+                background: $theme-color2;
+            }
+
+            .team-thumb {
+                img {
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    &.style2 {
+        position: relative;
+        overflow: hidden;
+        max-width: 410px;
+        margin: 0 auto;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+        .team-thumb {
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+
+            img {
+                transition: all 0.4s;
+                -webkit-transition: all 0.4s;
+                -moz-transition: all 0.4s;
+                -ms-transition: all 0.4s;
+                -o-transition: all 0.4s;
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+            }
+        }
+
+        .team-content {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            bottom: 40px;
+            left: 30px;
+            right: 30px;
+            padding: 15px 30px;
+            background: $white-color;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -ms-border-radius: 18px;
+            -o-border-radius: 18px;
+
+            .title {
+                h4 {
+                    margin-bottom: 0;
+                    color: $theme-color;
+                    font-family: $body-font;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 26.25px;
+                }
+
+                p {
+                    color: $text-color;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    margin-bottom: 0;
+
+                }
+
+                @include sm {
+                    h4 {
+                        font-size: 18px;
+                        line-height: 21.25px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 24px;
+
+                    }
+                }
+            }
+
+            .social-profile {
+                position: absolute;
+                right: 30px;
+                bottom: 27px;
+                text-align: center;
+                content: "";
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                z-index: 2;
+                display: inline-block;
+                overflow: hidden;
+                z-index: 5;
+
+                ul {
+                    padding-left: 0;
+                    margin-bottom: 5px;
+                    transform: translateY(100px);
+                    transition: all 0.6s ease-in-out;
+                    opacity: 0;
+                    visibility: hidden;
+
+                    li {
+                        margin-bottom: 5px;
+
+                        a {
+                            width: 44px;
+                            height: 44px;
+                            line-height: 44px;
+                            text-align: center;
+                            font-size: 18px;
+                            display: block;
+                            background: $body-color;
+                            color: $text-color;
+                            -webkit-transition: all .4s ease-in-out;
+                            transition: all .4s ease-in-out;
+                            text-align: center;
+                            margin: 0 auto;
+                            border-radius: 50%;
+
+                            &:hover {
+                                background-color: $theme-color;
+                                color: $white-color;
+                            }
+                        }
+                    }
+                }
+
+                .plus-btn {
+                    z-index: 2;
+                    cursor: pointer;
+                    width: 44px;
+                    height: 44px;
+                    line-height: 44px;
+                    text-align: center;
+                    font-size: 18px;
+                    display: inline-block;
+                    background: $body-color;
+                    color: $text-color;
+                    @include transition;
+                    border-radius: 50%;
+
+                    &:hover {
+                        background-color: $theme-color2;
+                        color: $title-color;
+                    }
+                }
+
+                &:hover {
+                    .plus-btn {
+                        background-color: $theme-color2;
+                        color: $title-color;
+                    }
+
+                    ul {
+                        transform: translateY(0);
+                        opacity: 1;
+                        visibility: visible;
+                        -webkit-transform: translateY(0);
+                        -moz-transform: translateY(0);
+                        -ms-transform: translateY(0);
+                        -o-transform: translateY(0);
+                    }
+                }
+            }
+
+            @include sm {
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+                padding: 15px 20px;
+
+                .social-profile {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 17px;
+                }
+
+            }
+        }
+
+        &:hover {
+            .team-thumb {
+                img {
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

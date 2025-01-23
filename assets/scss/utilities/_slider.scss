@@ -1,0 +1,19 @@
+ 
+
+
+.serviceSliderOne {
+    .slider-pagination {
+        text-align: center!important;
+        margin-top: 40px;
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: $theme-color;
+
+            &-active {
+                background-color: $theme-color2; 
+            }
+        }
+    }
+}

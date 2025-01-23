@@ -1,0 +1,163 @@
+/*----------------------------------------------
+    # Hero style here
+----------------------------------------------*/
+
+
+/* Hero 1 ---------------------------------- */
+.hero-wrapper {
+  &.style1 {
+    margin-top: 20px;
+  }
+}
+
+.hero-main-container {
+  &.style1 {
+    background: $white-color;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    margin-top: 20px;
+
+    @include md {
+      margin-top: 150px;
+    }
+  }
+}
+
+
+.hero-content {
+  &.style1 {
+    padding: 148px 0;
+
+    @include sm {
+      padding: 50px 0;
+    }
+  }
+
+  &.style2 {
+    position: relative;
+    padding: 162px 130px 70px;
+    border-radius: 60px;
+    background: $white-color;
+    z-index: 1;
+    height: 100%;
+
+    @media (max-width: 1700px) {
+      padding: 100px 49px 70px;
+    }
+
+    @include xl {
+      padding: 60px;
+    }
+
+    @include sm {
+      padding: 70px 30px 50px;
+    }
+
+    .brand-logo-wrapper {
+      padding-top: 140px;
+
+      img {
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      @include sm {
+        padding-top: 50px;
+      }
+    }
+
+    .shape1 {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      z-index: 2;
+    }
+  }
+}
+
+.hero-thumb {
+  &.style1 {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 70px;
+
+    .bordered-mask {
+      position: relative;
+      display: inline-block;
+      width: 89%;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      padding: 16px;
+      background-color: $white-color;
+      z-index: 9;
+      margin-top: 40px;
+
+      @include sm {
+        max-width: 60%;
+      }
+    }
+
+    .masked-image {
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      position: relative;
+      z-index: 9;
+    }
+
+    .masked-image img {
+      width: 100%;
+      display: block;
+      z-index: 9;
+    }
+
+
+
+    .main-thumb {
+      position: relative;
+      z-index: 3;
+    }
+
+    .shape {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+
+      @include sm {
+        max-width: 70%;
+      }
+    }
+  }
+
+  &.style2 {
+    width: 100%;
+    height: 100%;
+
+    @include md {
+      margin-top: 130px;
+    }
+
+    .main-thumb {
+      width: 100%;
+      height: 100%;
+
+      @include md {
+        height: auto;
+      }
+    }
+  }
+}
+
+
+.heroSliderOne {
+  margin-right: -220px;
+  margin-bottom: -100px;
+
+  .swiper-slide {
+    overflow: visible;
+  }
+}

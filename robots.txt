@@ -1,0 +1,11 @@
+# Allow all bots to crawl all content
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+
+# Allow all bots to crawl images, css, js files (important for proper rendering)
+Allow: /assets/
+
+# Point to your sitemap for easier crawling
+Sitemap: https://mpherugroup.co.za/sitemap.xml

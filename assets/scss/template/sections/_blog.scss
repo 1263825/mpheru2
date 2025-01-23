@@ -1,0 +1,294 @@
+/*----------------------------------------------
+    # Blog style here
+----------------------------------------------*/
+
+.blog_card {
+  margin-top: 30px;
+  border: 1px solid $title-color;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+  &__thumb {
+    img {
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+    }
+  }
+
+  &__body {
+    padding: 20px 30px 40px;
+
+    h4 {
+      a {
+        font-family: $body-font;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26.25px;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+
+        &:hover {
+          color: $theme-color2 !important;
+        }
+      }
+
+      @include sm {
+        line-height: 27px;
+      }
+    }
+
+    .text {
+      color: $text-color;
+      font-family: $body-font;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+
+    .view-button {
+      font-family: $body-font;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 27.2px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+
+      &:hover {
+        letter-spacing: 2px;
+      }
+    }
+
+    @include sm {
+      padding: 20px 25px 30px;
+    }
+  }
+
+  &:hover {
+    .blog_card__thumb {
+      img {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+      }
+    }
+  }
+
+  &.style1 {
+    .blog_card {
+      &__thumb {
+        border-radius: 20px 20px 0px 0px;
+        -webkit-border-radius: 20px 20px 0px 0px;
+        -moz-border-radius: 20px 20px 0px 0px;
+        -ms-border-radius: 20px 20px 0px 0px;
+        -o-border-radius: 20px 20px 0px 0px;
+
+        img {
+          width: 100%;
+          border-radius: 20px 20px 0px 0px;
+          -webkit-border-radius: 20px 20px 0px 0px;
+          -moz-border-radius: 20px 20px 0px 0px;
+          -ms-border-radius: 20px 20px 0px 0px;
+          -o-border-radius: 20px 20px 0px 0px;
+        }
+      }
+
+      &__body {
+
+        h4 {
+          a {
+            color: $theme-color;
+          }
+        }
+
+        .view-button {
+          color: $theme-color3;
+        }
+      }
+
+      &__meta {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $border-color;
+
+        .posted-by {
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+        }
+
+        .posted-on {
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+        }
+
+        .comment-on {
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  &.style2 {
+    .blog_card {
+      &__thumb {
+        position: relative;
+        z-index: 2;
+        border-radius: 20px 20px 0px 0px;
+        -webkit-border-radius: 20px 20px 0px 0px;
+        -moz-border-radius: 20px 20px 0px 0px;
+        -ms-border-radius: 20px 20px 0px 0px;
+        -o-border-radius: 20px 20px 0px 0px;
+
+        img {
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          border-radius: 20px 20px 0px 0px;
+          -webkit-border-radius: 20px 20px 0px 0px;
+          -moz-border-radius: 20px 20px 0px 0px;
+          -ms-border-radius: 20px 20px 0px 0px;
+          -o-border-radius: 20px 20px 0px 0px;
+        }
+      }
+
+      &__body {
+
+        h4 {
+          a {
+            color: $theme-color;
+          }
+        }
+
+        .view-button {
+          color: $theme-color;
+        }
+      }
+
+      &__meta {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $border-color;
+
+        .posted-by {
+          color: $title-color;
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+
+          @include vxs {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+
+        .posted-on {
+          color: $title-color;
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+
+          &.style2 {
+            position: absolute;
+            right: 0;
+            top: -50px;
+            z-index: 4;
+            background: $theme-color2;
+            width: 56px;
+            height: 56px;
+            line-height: 56px;
+            text-align: center;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+
+            @include md {
+              right: -15px;
+            }
+
+            @include sm {
+              right: -21px;
+            }
+
+            h6 {
+              color: $theme-color;
+              text-align: center;
+              font-family: $title-font;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              margin-bottom: 0;
+              margin-top: 4px;
+            }
+
+          }
+        }
+
+        .comment-on {
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+
+          @include vxs {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+
+        @include md {
+          gap: 15px;
+        }
+      }
+    }
+  }
+
+}

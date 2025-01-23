@@ -1,0 +1,547 @@
+/*----------------------------------------------
+    # Widget Sidebar style here
+----------------------------------------------*/
+.main-sidebar {
+    .single-sidebar-widget {
+        padding: 40px 0px 50px;
+        background: $white-color;
+        margin-bottom: 60px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+        @include lg {
+            &.mt-n116 {
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width: 1700px) {
+            padding: 25px 0 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .thumb {
+            img {
+                width: 100%;
+            }
+        }
+
+        &.style2 {
+            padding: 30px 40px;
+
+            @media (max-width: 1700px) {
+                padding: 25px;
+            }
+        }
+
+        .wid-title {
+            padding-bottom: 10px;
+            padding-left: 40px;
+
+            &.style2 {
+                padding-left: 0;
+            }
+        }
+
+        .search-widget {
+            form {
+                width: 100%;
+                position: relative;
+
+                input {
+                    background-color: $body-color;
+                    font-size: 15px;
+                    padding: 20px;
+                    width: 100%;
+                    border: none;
+                    color: $text-color;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+
+                    &::placeholder {
+                        color: $text-color;
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 70px;
+                    font-size: 18px;
+                    height: 100%;
+                    background: $theme-color2;
+                    border: none;
+                    color: $white-color;
+                    text-align: center;
+                    transition: background .3s ease;
+                    -webkit-transition: background .3s ease;
+                    -moz-transition: background .3s ease;
+                    -ms-transition: background .3s ease;
+                    -o-transition: background .3s ease;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+
+                    &:hover {
+                        background: $theme-color;
+
+                    }
+                }
+            }
+        }
+
+        .news-widget-categories {
+            background: $white-color;
+
+            ul {
+                padding-left: 0;
+                list-style-type: none;
+
+                li {
+                    background-color: $white-color;
+                    font-weight: 500;
+                    @include transition;
+                    border-top: 1px solid $border-color;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 13px 30px;
+                        color: $theme-color;
+                        font-family: $body-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 30px;
+                        text-transform: capitalize;
+
+                        span {
+                            @include transition;
+                            color: $title-color;
+                        }
+                    }
+
+
+                    &:hover {
+                        background: $theme-color2;
+                        color: $white-color;
+
+                        a {
+                            color: $title-color;
+                        }
+
+                        span {
+                            color: $title-color;
+                        }
+                    }
+
+
+                    &.active {
+                        background: $theme-color2;
+                        ;
+
+                        a {
+                            color: $title-color;
+                        }
+
+                        span {
+                            color: $title-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .project-details-widget-card {
+            .project-info {
+                padding: 0 40px;
+
+                li {
+                    display: grid;
+                    grid-template-columns: 30% 70%;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 5px;
+                    margin-bottom: 15px;
+
+                    .label {
+                        color: $theme-color;
+                        font-family: $title-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 30px;
+                        text-transform: capitalize;
+                        margin-right: 15px;
+                    }
+
+                    .colon {
+                        color: $theme-color;
+                        font-family: $title-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 30px;
+                        text-transform: capitalize;
+                        margin-right: 15px;
+                    }
+
+                    .value {
+                        color: $text-color;
+                        font-family: $title-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                    }
+                }
+
+                @include sm {
+                    padding: 0 25px;
+                }
+            }
+        }
+
+        .recent-post-area {
+            .recent-items {
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                gap: 20px;
+                background: $body-color;
+                border-radius: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #E6E5E5;
+                }
+
+                .recent-thumb {
+                    overflow: hidden;
+
+                    img {
+                        width: 136px;
+                        height: 132px;
+                        object-fit: cover;
+                        border-radius: 20px 0px 0px 20px;
+                        transition: all 0.4s;
+                        -webkit-border-radius: 20px 0px 0px 20px;
+                        -moz-border-radius: 20px 0px 0px 20px;
+                        -ms-border-radius: 20px 0px 0px 20px;
+                        -o-border-radius: 20px 0px 0px 20px;
+                        -webkit-transition: all 0.4s;
+                        -moz-transition: all 0.4s;
+                        -ms-transition: all 0.4s;
+                        -o-transition: all 0.4s;
+
+                        @media (max-width:1700px) {
+                            width: 130px;
+                        }
+                    }
+                }
+
+                .recent-content {
+                    max-width: 145px;
+
+                    ul {
+                        list-style-type: none;
+                        padding-left: 0;
+                        margin-bottom: 8px;
+
+                        li {
+                            color: $theme-color3;
+                            font-family: $body-font;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 26px;
+                            text-transform: capitalize;
+
+                            i {
+                                color: $theme-color3;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+
+                    h6 {
+                        font-weight: 700;
+                        margin-bottom: 0;
+
+                        a {
+                            color: $title-color;
+                            font-family: $title-font;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 24px;
+
+                            &:hover {
+                                color: $theme-color2;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    .recent-thumb {
+                        img {
+                            transform: scale(1.1);
+                            -webkit-transform: scale(1.1);
+                            -moz-transform: scale(1.1);
+                            -ms-transform: scale(1.1);
+                            -o-transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .tagcloud {
+            a {
+                display: inline-flex;
+                padding: 10px 16px;
+                color: $title-color;
+                font-family: $title-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 14px;
+                text-transform: capitalize;
+                background: $white-color;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                border: 1px solid $border-color;
+                border-radius: 4px;
+                @include transition;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    background: $theme-color2;
+                    color: $white-color !important;
+                }
+            }
+        }
+    }
+}
+
+.recent-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: 0;
+    }
+
+    .media-img {
+        margin-right: 20px;
+        width: 95px;
+        overflow: hidden;
+        flex: none;
+
+        img {
+            width: 100%;
+            transition: 0.4s ease-in-out;
+        }
+    }
+
+    .post-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.25;
+        margin: 10px 0 0px;
+        font-family: $title-font;
+        text-transform: capitalize;
+    }
+
+    .recent-post-meta {
+        margin-bottom: -2px;
+
+        .price {
+            font-size: 18px;
+            font-weight: 700;
+            color: #c5c5c5;
+
+            del {
+                margin-right: 10px;
+            }
+
+            strong {
+                color: $theme-color;
+                font-weight: 700;
+            }
+        }
+
+        a {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 400;
+            color: $body-color;
+
+            i {
+                margin-right: 9px;
+                color: $theme-color2;
+                transition: 0.4s;
+            }
+
+            &:hover {
+                color: $theme-color;
+
+                i {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .media-img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+.widget_shopping_cart {
+    .widget_title {
+        margin-bottom: 30px;
+        border-bottom: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .mini_cart_item {
+        position: relative;
+        padding: 30px 30px 30px 90px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 0;
+        text-align: left;
+
+        &:first-child {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .cart_list {
+        a:not(.remove) {
+            display: block;
+            color: $body-color;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $title-font;
+            font-weight: 600;
+            color: $title-color;
+            margin-bottom: 6px;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+        a.remove {
+            position: absolute;
+            top: 50%;
+            left: 95%;
+            transform: translateY(-50%);
+            color: $body-color;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+        img {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            left: 0;
+            top: 18px;
+        }
+    }
+
+    .quantity {
+        display: inline-flex;
+        white-space: nowrap;
+        vertical-align: top;
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .total {
+        margin-top: 20px;
+        font-size: 18px;
+        color: $title-color;
+        font-family: $body-font;
+
+        strong {
+            font-family: $title-font;
+        }
+    }
+
+    .amount {
+        padding-left: 5px;
+    }
+
+    .as-btn {
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+@include lg {
+    .widget_title {
+        font-size: 22px;
+        margin: -0.12em 0 24px 0;
+    }
+}
+
+@media (max-width: 330px) {
+    .recent-post {
+        .post-title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .recent-post-meta a {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+ /*----------------------------------------------
+    # Service Extra style here
+----------------------------------------------*/
+ .service-details-wrapper {
+     &.style1 {
+         .service-details-content {
+             .thumb1 {
+                 margin-bottom: 40px;
+                 border-radius: 40px;
+                 -webkit-border-radius: 40px;
+                 -moz-border-radius: 40px;
+                 -ms-border-radius: 40px;
+                 -o-border-radius: 40px;
+
+                 img {
+                     border-radius: 40px;
+                     -webkit-border-radius: 40px;
+                     -moz-border-radius: 40px;
+                     -ms-border-radius: 40px;
+                     -o-border-radius: 40px;
+                 }
+             }
+
+             h2 {
+                 color: $title-color;
+                 font-family: $title-font;
+                 font-size: 70px;
+                 font-style: normal;
+                 font-weight: 900;
+                 line-height: 75px;
+
+                 @media (max-width:1700px) {
+                     font-size: 54px;
+                     line-height: 60px;
+                 }
+
+                 @include sm {
+                    font-size: 30px;
+                    line-height: 35px;
+                 }
+             }
+
+             .text1 {
+                 color: $text-color;
+                 font-family: $title-font;
+                 font-size: 18px;
+                 font-style: normal;
+                 font-weight: 400;
+                 line-height: 28px;
+             }
+
+             .text2 {
+                 color: $text-color;
+                 font-family: $title-font;
+                 font-size: 18px;
+                 font-style: normal;
+                 font-weight: 400;
+                 line-height: 28px;
+                 margin-bottom: 0;
+             }
+         }
+
+
+         .details-box {
+
+             h3 {
+                 color: $theme-color;
+                 font-family: $title-font;
+                 font-size: 28px;
+                 font-style: normal;
+                 font-weight: 600;
+                 line-height: 27.2px;
+             }
+
+             .checklist {
+                 padding-left: 0;
+
+                 li {
+                     color: #23365E;
+                     font-family: $body-font;
+                     font-size: 18px;
+                     font-style: normal;
+                     font-weight: 500;
+                     line-height: 30px;
+                     text-transform: capitalize;
+
+                     i {
+                         color: $theme-color2;
+                         margin-right: 5px;
+                     }
+                 }
+             }
+
+             .text3 {
+                 color: $text-color;
+                 font-family: $title-font;
+                 font-size: 18px;
+                 font-style: normal;
+                 font-weight: 400;
+                 line-height: 28px;
+             }
+         }
+
+     }
+ }
